@@ -15,64 +15,6 @@
       <div id="div1"></div>
     </div>
 
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      *::before {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      *::after {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      #html {
-        word-break: break-all;
-      }
-      #div1 {
-        position: fixed;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 40px;
-      }
-      /*伪元素*/
-      #div1::before {
-        content: "";
-        display: block;
-      }
-      /*伪元素*/
-      #div1::after {
-        content: "";
-        display: block;
-      }
-      @media (max-width: 500px) {
-        #html {
-          height: 50vh;
-          overflow: auto;
-        }
-        #div1Wrapper {
-          height: 50vh;
-          display: flex;
-        }
-        #div1 {
-          position: relative;
-          left: 50%;
-          top: 50%;
-          transform: translate(-50%, -50%);
-        }
-        #div1::before {
-          position: relative;
-        }
-        #div1::after {
-          position: relative;
-        }
-      }
-    </style>
     <script src="main.js"></script>
   </body>
 </html>
